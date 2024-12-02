@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECET/SERVICES</title>
+<link rel="icon" href="logo.png" type="image/x-icon">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                    url('wel.jpg') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                    url('wel.jpg') no-repeat center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 75px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo {
+        color: #ff7200;
+        font-size: 35px;
+        font-family: Arial, sans-serif;
+        padding-left: 20px;
+    }
+
+    .menu {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 40px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+    }
+
+    ul li a:hover {
+        color: #ff7200;
+    }
+
+    .content {
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        color: #fff;
+        position: relative;
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-family: 'Times New Roman', serif;
+        font-size: 50px;
+        margin-top: 5%;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial, sans-serif;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+
+    .content .cn {
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+    }
+
+    .content .cn a {
+        text-decoration: none;
+        color: #000;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: #fff;
+    }
+
+    .content span {
+        color: #ff7200;
+        font-size: 65px;
+    }
+
+    fieldset {
+        border: 2px solid #ff7200;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    legend {
+        font-size: 24px;
+        color: #ff7200;
+    }
+
+    ul li {
+        font-size: 18px;
+        padding: 5px 0;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #ff7200;
+    }
+
+    /* Mobile and Tablet Responsiveness */
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            height: auto;
+        }
+
+        .logo {
+            font-size: 28px;
+        }
+
+        .menu {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        ul li {
+            margin-left: 0;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 30px;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .content .cn {
+            width: 140px;
+            height: 35px;
+            font-size: 16px;
+        }
+
+        fieldset {
+            padding: 15px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo {
+            font-size: 24px;
+        }
+
+        .navbar {
+            padding: 10px;
+        }
+
+        ul li {
+            margin-left: 0;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .content h1 {
+            font-size: 24px;
+        }
+
+        .content .cn {
+            width: 130px;
+            height: 30px;
+            font-size: 14px;
+        }
+
+        fieldset {
+            padding: 10px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MOCK TEST</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="choice.php">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <fieldset>
+                <legend>SERVICES</legend>
+                <h1 align="center">AVAILABLE COURSES</h1>
+                <h3>GENERAL SUBJECTS</h3>
+                <ul>
+                    <li>MATHEMATICS</li>
+                    <li>PHYSICS</li>
+                    <li>CHEMISTRY</li>
+                </ul>
+                <h3>CORE SUBJECTS</h3>
+                <ul>
+                    <li>C LANGUAGE AND DATA STRUCTURES</li>
+                    <li>DIGITAL ELECTRONICS</li>
+                    <li>OPERATING SYSTEM</li>
+                    <li>RDBMS</li>
+                    <li>JAVA</li>
+                    <li>WEB TECHNOLOGIES</li>
+                    <li>OOPS THROUGH C++</li>
+                    <li>COMPUTER NETWORKS</li>
+                </ul>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

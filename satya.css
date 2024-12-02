@@ -1,0 +1,255 @@
+
+body.color {
+  width: 100%;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.textcolor {
+  padding: 1px;
+  background-color: #ff7200;
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.font {
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+  padding: 10px;
+}
+
+.logo {
+  color: #ff7200;
+  font-size: 2rem; /* Use relative units */
+  font-family: Arial, sans-serif;
+  padding-left: 20px;
+}
+
+.menu {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+ul li {
+  margin-left: 1.5rem;
+  margin-top: 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  height:10vh;
+  padding: 10px 20px;
+  background-color: #ff7200;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: 0.2s ease-in-out;
+}
+
+ul li a:hover {
+  color: #ff7200;
+height: 10vh;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+ul li ul.dropdown li{
+display:block;
+}
+
+
+ul li ul.dropdown{
+width:100%;
+position:absolute;
+z-index:999;
+display:none;
+}
+
+ul li:hover ul.dropdown{
+display:block;
+}
+
+
+form {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+form ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+.satya {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff7200;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.satya:hover {
+  color: #ff7200;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.form3 {
+  width: 250px;
+  height: 270px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 30px;
+  visibility: hidden;
+}
+
+.form3 h2,
+.form3 h1 {
+  text-align: center;
+  color: #ff7200;
+}
+
+.form3 h2 {
+background:#fff;
+border-radius:6px;
+padding:6px;
+}
+
+.form3 h1 {
+  font-size: 2.5rem;
+  padding: 15px;
+
+}
+
+.form3 p {
+  font-size: 1.25rem;
+  color: #ff7200;
+}
+
+.ans, .rem {
+  font-size: 1rem;
+  background:#ff7200;
+   color:#FFFF;
+  cursor: pointer;
+  border-radius:10px;
+  margin: 10px 5px;
+  padding: 10px 20px;
+}
+
+.ans:hover, .rem:hover {
+  color: #ff7200;
+  background: #fff;
+}
+
+.open-form3 {
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .menu ul li {
+    margin-left: 1rem;
+    margin-top: 8px;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .form3 {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .satya {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .font {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem; /* Even smaller for small screens */
+  }
+
+  .menu ul li {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .form3 {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .satya {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .font {
+    font-size: 0.9rem;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+form li {
+  width: 100%;
+}
